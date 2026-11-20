@@ -18,7 +18,7 @@
       </div>
       <div class="topbar-right">
         <div class="pill" id="cash-pill">CUMULATIVE PROFIT <b id="cash">$ 0.00M</b></div>
-        <div class="pill" id="round-pill">ROUND <b id="round-num">01</b> / 04</div>
+        <div class="pill" id="round-pill">ROUND <b id="round-num">01</b> / <span id="round-total">06</span></div>
         <div class="pill screen-pill" id="screen-label">START MENU</div>
         <button class="ghost-btn" id="help-btn" type="button">HOW TO PLAY</button>
       </div>
@@ -43,20 +43,12 @@
       <section id="screen" class="screen" aria-live="polite"></section>
     </main>
 
-    <footer class="footer" id="footer">CONDITIONS CHANGE EVERY ROUND  •  SWITCHING MARKET LATER = PENALTY</footer>
+    <footer class="footer" id="footer"></footer>
   </div>
 
   <dialog id="help">
     <h2>How to play</h2>
-    <p>You run <b>Team 3</b>, a chip business competing with 7 rival teams over <b>4 rounds</b>. The team with the highest <b>cumulative profit</b> wins.</p>
-    <ol>
-      <li><b>Scan:</b> compare six markets on demand, price pressure and rival activity. The free signals are rough estimates, and conditions change every round.</li>
-      <li><b>Develop:</b> choose a chip family. Chips fit some markets far better than others. In rounds 1 and 3 you get a <b>research point</b> to upgrade your chip for your market.</li>
-      <li><b>Compete:</b> buy up to one report ($0.05M), then set your price, marketing budget and production run. Production costs $20 per chip, sold or not.</li>
-      <li><b>Review:</b> see revenue, costs, profit and how your prediction compared with real sales.</li>
-    </ol>
-    <p><b>Market rule:</b> moving to a different market from the previous round costs a <b>$0.30M penalty</b>, and your upgrade loses its value. Teams that stay in a market build loyalty. Marketing works best when you enter a new market.</p>
-    <p>Each round also costs a fixed $0.30M in development. Each team can sell at most 60,000 chips per round.</p>
+    <div id="help-body"></div>
     <form method="dialog"><button class="primary-btn">GOT IT</button></form>
   </dialog>
 
